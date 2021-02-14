@@ -1,57 +1,154 @@
-//! ****************** COLORS ******************
-
 :root {
-    //? RED SHADES
-  
-    --color-red: #eb2f64;
-    --color-red-light: #ff3366;
-    --color-red-dark: #ba265d;
-  
-    //? GREEN SHADES
-    --color-green: #55c57a;
-    --color-green-light: #7ed56f;
-    --color-green-dark: #28b485;
-  
-    //? Yellow SHADES
-    --color-yellow-light: #ffb900;
-    --color-orange-dark: #ff7730;
-  
-    //? BLUE SHADES
-    --color-blue-light: #2998ff;
-    --color-blue-dark: #5643fa;
-  
-    //? GREY SHADES
-    --color-grey-light-1: #faf9f9;
-    --color-grey-light-2: #f7f7f7;
-    --color-grey-light-3: #f4f2f2;
-    --color-grey-light-4: #eee;
-    --color-grey-light-5: #f0eeee;
-    --color-grey-light-6: #ccc;
-  
-    --color-grey-dark-1: #999;
-    --color-grey-dark-2: #777;
-    --color-grey-dark-3: #333; //TEXT COLOR
-  
-    //? WHITE SHADES
-    --color-white: #fff;
-  
-    //? BLACK SHADES
-    --color-black: #333333;
-  
-    //! ****************** FONT ******************
-    --default-font-size: 1.5rem; // when font size 10px
-  
-    //! ****************** BORDER ******************
-    --line: 1px solid rgba(77, 77, 77, 0.1);
-  
-    //! ****************** SHADOWS ******************
-    --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
-    --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
-  }
-  
+  // Add These Colors Into Global File
 
+  // $color-primary: #7ed56f;
+  // $color-primary-light: rgb(123, 206, 134);
+  // $color-primary-dark: rgb(16, 58, 12);
+  // $color-white-light: rgb(245, 245, 245);
 
-  $color-primary: #7ed56f;
+  // $color-secondary-light: #ffb900;
+  // $color-secondary-dark: #ff7730;
+
+  // $color-tersiary-light: #2998f8;
+  // $color-tersiary-dark: #5643fa;
+
+  // $color-light-grey-1: rgb(230, 230, 230);
+
+  // $color-grey-dark: rgba(15, 15, 15, 0.9);
+  // $color-text-dark-1: #5a5757;
+  // $color-text-dark: #777777;
+  // $color-black: rgba(5, 5, 5, 0.9);
+
+  // $default-font-size: 1.2em;
+
+  // $color-white: #fff;
+
+  //! DO NOT CHANGE
+  //! ----------------------------- SYSTEM ROOT COLORS STARTED -----------------------------
+  //? ****************** COLORS  ********************
+
+  --color-red-light: #e7584a; /* Flamingo */
+  --color-red-dark: #e44332; /* cinnabar */
+
+  --color-grey-light: #fefdfd; /* Bacground-color Gery hint of red */
+  --color-grey-light-1: #6e6e6e; /* text Dim Grey */
+  --color-grey-light-2: #878787; /* text Suva Grey */
+  --color-grey-dark: #1f1f1f; /* text Nero */
+
+  --color-yellow-light: #ffffaa; /* selection canary */
+
+  --color-blue-light: #316fea; /*  Royal Blue */
+
+  --color-white: #ffffff; /* white */
+
+  --font-family-default: "Graphik Web", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+
+  //? RED SHADES
+
+  --color-red: #eb2f64;
+  --color-red-light: #ff3366;
+  --color-red-dark: #ba265d;
+
+  //? GREEN SHADES
+  --color-green: #55c57a;
+  --color-green-light: #7ed56f;
+  --color-green-dark: #28b485;
+
+  //? Yellow SHADES
+  --color-yellow-light: #ffb900;
+  --color-orange-dark: #ff7730;
+
+  //? BLUE SHADES
+  --color-blue-light: #2998ff;
+  --color-blue-dark: #5643fa;
+
+  //? GREY SHADES
+  --color-grey-light-1: #faf9f9;
+  --color-grey-light-2: #f7f7f7;
+  --color-grey-light-3: #f4f2f2;
+  --color-grey-light-4: #eee;
+  --color-grey-light-5: #f0eeee;
+  --color-grey-light-6: #ccc;
+
+  --color-grey-dark-1: #999;
+  --color-grey-dark-2: #777;
+  --color-grey-dark-3: #333; 
+
+  //?  BLACK SHADES
+  --color-black: rgb(15, 15, 15) //TEXT COLOR
+
+  //?  WHITE TRANSPARENT SHADES
+  --white01: hsla(0, 0%, 100%, 0.01);
+  --white03: hsla(0, 0%, 100%, 0.03);
+  --white04: hsla(0, 0%, 100%, 0.04);
+  --white05: hsla(0, 0%, 100%, 0.05);
+  --white06: hsla(0, 0%, 100%, 0.06);
+  --white07: hsla(0, 0%, 100%, 0.07);
+  --white08: hsla(0, 0%, 100%, 0.08);
+  --white1: hsla(0, 0%, 100%, 0.1);
+  --white12: hsla(0, 0%, 100%, 0.12);
+  --white14: hsla(0, 0%, 100%, 0.14);
+  --white18: hsla(0, 0%, 100%, 0.18);
+  --white2: hsla(0, 0%, 100%, 0.2);
+  --white24: hsla(0, 0%, 100%, 0.24);
+  --white36: hsla(0, 0%, 100%, 0.36);
+  --white3: hsla(0, 0%, 100%, 0.3);
+  --white4: hsla(0, 0%, 100%, 0.4);
+  --white48: hsla(0, 0%, 100%, 0.48);
+  --white5: hsla(0, 0%, 100%, 0.5);
+  --white54: hsla(0, 0%, 100%, 0.54);
+  --white56: hsla(0, 0%, 100%, 0.56);
+  --white6: hsla(0, 0%, 100%, 0.6);
+  --white65: hsla(0, 0%, 100%, 0.65);
+  --white8: hsla(0, 0%, 100%, 0.8);
+  --white85: hsla(0, 0%, 100%, 0.85);
+  --white9: hsla(0, 0%, 100%, 0.9);
+  --white95: hsla(0, 0%, 100%, 0.95);
+
+  //? BLACK TRANSPARENT SHADES
+  --black02: rgba(0, 0, 0, 0.02);
+  --black07: rgba(0, 0, 0, 0.07);
+  --black12: rgba(0, 0, 0, 0.12);
+  --black16: rgba(0, 0, 0, 0.16);
+  --black18: rgba(0, 0, 0, 0.18);
+  --black24: rgba(0, 0, 0, 0.24);
+  --black35: rgba(0, 0, 0, 0.35);
+  --black36: rgba(0, 0, 0, 0.36);
+  --black5: rgba(0, 0, 0, 0.5);
+  --black54: rgba(0, 0, 0, 0.54);
+  --black56: rgba(0, 0, 0, 0.56);
+  --black85: rgba(0, 0, 0, 0.85);
+  --black04: rgba(0, 0, 0, 0.04);
+  --black05: rgba(0, 0, 0, 0.05);
+  --black06: rgba(0, 0, 0, 0.06);
+  --black08: rgba(0, 0, 0, 0.08);
+  --black1: rgba(0, 0, 0, 0.1);
+  --black14: rgba(0, 0, 0, 0.14);
+  --black15: rgba(0, 0, 0, 0.15);
+  --black2: rgba(0, 0, 0, 0.2);
+  --black3: rgba(0, 0, 0, 0.3);
+  --black4: rgba(0, 0, 0, 0.4);
+  --black25: rgba(0, 0, 0, 0.25);
+
+  //? ****************** FONT ******************
+  --default-font-size: 1.5rem; // when font size 10px
+
+  --default-font-family: -apple-system, \.SFNSText-Regular, Helvetica Neue,
+    Hiragino Sans GB, WenQuanYi Micro Hei, Microsoft Yahei, sans-serif, Meiryo;
+
+  //? ****************** BORDER ******************
+  --line: 1px solid rgba(77, 77, 77, 0.1);
+
+  //? ****************** SHADOWS ******************
+  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+  --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+
+  //! ----------------------------- SYSTEM ROOT COLORS STARTED -----------------------------
+}
+
+// 3 SELECTED COLORS  //! CAN BE MODIFIED ACCORDING TO PROJECT
+$color-primary: #7ed56f;
 $color-primary-light: rgb(123, 206, 134);
 $color-primary-dark: rgb(16, 58, 12);
 $color-white-light: rgb(245, 245, 245);
@@ -71,9 +168,5 @@ $color-black: rgba(5, 5, 5, 0.9);
 
 $default-font-size: 1.2em;
 
-
-
-
-
-
-
+$font-black: var(--color-black);
+$color-white: #fff;

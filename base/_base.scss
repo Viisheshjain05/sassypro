@@ -41,3 +41,21 @@ a {
   text-decoration: none;
   color: var(--color-white);
 }
+
+
+
+
+/* Starter CSS basic adjustments  */
+
+*, 
+::before,
+::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+}
+/* Provide Standard sizes among all the browsers */
