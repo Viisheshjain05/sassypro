@@ -1,10 +1,17 @@
-// @import "./NextorGridSpecific";
-
-// @import "./TodoProjectSepecific";
-
+//? 1) ----------------------------- ToDoMist Specific START -----------------------------
 @import "./TodomistSpecific";
-@import "./LanderTemplate";
-@import "./ResponsiveDesine";
 
-// BASE FILE  //! DO NOT IMPORT BREAK BASES
-// @import './landerJunk'
+// Theme for TodoMist - Lander
+@import "./LanderTemplate";
+//? ----------------------------- ToDoMist Specific END -----------------------------
+
+//! ----------------------------- OtherProject  -----------------------------
+
+//? 2) ----------------------------- [name] Specific START -----------------------------
+// @import "./";
+
+// Theme for [name] - [name]
+// @import "./";
+//? ----------------------------- [name] Specific END -----------------------------
+
+//! ----------------------------- OtherProject  -----------------------------

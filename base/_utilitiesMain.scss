@@ -1,14 +1,16 @@
+//! ----------------------------- TypoGraphy Start -----------------------------
 // FONT || Typography
 @import "./typography/fontUtil";
 
 // ALIGNMENT || Typography
 @import "./typography/alignment";
 
+//! ----------------------------- csswg Layout Start -----------------------------
 // BACKGROUND
 @import "./csswg-LayoutModal/color";
 
 // BOX MODLE
-@import "./csswg-LayoutModal/boxModleUtil";
+@import "./csswg-LayoutModal/boxModel";
 
 // Positioned Layout MODLE
 @import "./csswg-LayoutModal/positionedLayout";
@@ -19,9 +21,18 @@
 // Display Layout MODLE
 @import "./csswg-LayoutModal/display";
 
+// Box Sizing Layout MODLE
+@import "./csswg-LayoutModal/boxSizing";
+
+// Basic User Interface Layout MODLE
+@import "./csswg-LayoutModal/basicUserInterface";
+
 // Overflow Layout MODLE
 @import "./csswg-LayoutModal/overflow";
 
+// transitions Layout MODLE
+@import "./csswg-LayoutModal/transitions";
+
+//! ----------------------------- MediaQuery Start -----------------------------
 // MEDIA QUERIES
 @import "./mediaQueries/mediaMain";
-

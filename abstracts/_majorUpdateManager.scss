@@ -87,3 +87,23 @@
 .clr-fs-curcol {
   color: currentColor;
 }
+
+//? _home.scss
+.main-container {
+  display: flex;
+  height: 100%;
+  background-color: var(--color-black);
+}
+
+.hotel-view {
+  flex: 10;
+  background-color: var(--color-grey-light-2);
+}
+
+//? _basicUserInterface.scss.scss
+.cursor {
+  //! Wrong Spell
+  &-pointor {
+    cursor: pointer;
+  }
+}

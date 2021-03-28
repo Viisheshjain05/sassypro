@@ -3,8 +3,10 @@
   .mq-sm-hidden {
     display: none !important;
   }
-  // Todo Imediate Added not To use
-  .z-1 {
-    left: 40% !important;
+  .mq-sm__left-40 {
+       left: 40% !important;
+  }
+  .mq-sm__fs-40 {
+       font-size: 10px !important;
   }
 }

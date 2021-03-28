@@ -5,7 +5,7 @@
 
 //Todo INDEX
 // 1) Background
-// 2)
+// 2) Border
 // 3)
 // 4)
 // 5)
@@ -26,4 +26,80 @@
       background-image: url("../../theme/images/logo.png");
     }
   }
+
+  &-clr--white {
+    background-color: $white;
+  }
+}
+
+$spacer: 1rem;
+
+$space-0: ($spacer * 0);
+$space-1: ($spacer * 0.375);
+$space-2: ($spacer * 0.75);
+$space-3: ($spacer * 1.5);
+$space-4: ($spacer * 3);
+$space-5: ($spacer * 6);
+
+// line-right-dark
+.line {
+  // Full Light
+  &-l {
+    border: var(--default-line-light);
+  }
+  // Full Dark
+  &-d {
+    border: var(--default-line-dark);
+  }
+  // Right
+  &-r {
+    // Dark
+    &d {
+      border-right: var(--default-line-dark);
+    }
+    &l {
+      border-right: var(--default-line-light);
+    }
+  }
+  // Left
+  &-l {
+    // light
+    &l {
+      border-left: var(--default-line-light) !important;
+    }
+    // Dark
+    &d {
+      border-left: var(--default-line-dark) !important;
+    }
+  }
+  // Top
+  &-t {
+    // light
+    &l {
+      border-top: var(--default-line-light) !important;
+    }
+    // Dark
+    &d {
+      border-top: var(--default-line-dark) !important;
+    }
+  }
+  // bottom
+  &-b {
+    // light
+    &l {
+      border-bottom: var(--default-line-light) !important;
+    }
+    // Dark
+    &d {
+      border-bottom: var(--default-line-dark) !important;
+    }
+  }
+}
+
+.br-50 {
+  border-radius: 50em;
+}
+
+.b2-solid-trans {
+  border: 2px solid transparent;
 }

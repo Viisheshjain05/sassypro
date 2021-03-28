@@ -1,10 +1,12 @@
-//Todo INDEX 
-// 1) 
-// 2) 
-// 3) 
-// 4) 
-// 5) 
+//  Todo Components 
+//  .ModalBox - container-col ml-auto shadow-light z-1 bg-white-900 p-3 mt-2 line-l  
 
+//Todo INDEX
+// 1)
+// 2)
+// 3)
+// 4)
+// 5)
 
 .close {
   float: right;
@@ -22,6 +24,7 @@
 .close:focus {
   color: #000000;
   text-decoration: none;
+  background-color: transparent;
   cursor: pointer;
   opacity: 0.5;
   filter: alpha(opacity=50);
@@ -30,13 +33,13 @@
 .modal {
   overflow: hidden;
   position: fixed;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
-  top: 40%;
-  left: -80%;
-  width: 70em;
   z-index: 1050;
   -webkit-overflow-scrolling: touch;
   outline: 0;
+  width: 50%;
 }
 .modal-close {
   display: none;
@@ -53,7 +56,6 @@
 .modal-content {
   position: relative;
   background-color: #ffffff;
-  border: 1px solid #999999;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 6px;
   -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
@@ -65,11 +67,11 @@
 .modal-backdrop {
   display: block;
   overflow: hidden;
-  position: fixed;  
-  top: -100%;
-  right: -105em;
-  bottom: -16.7em;
-  left: -100em;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   z-index: 1040;
   background-color: #000000;
 }
@@ -94,13 +96,13 @@
 .modal-header {
   display: flex;
   justify-content: space-between;
-  padding: 15px;
+  padding: 1em;
   border-bottom: 1px solid #e5e5e5;
-  min-height: 16.42857143px;
-  
+  min-height: 1em;
 }
 
 .modal-title {
+  font-size: 2em;
   margin: 0;
   line-height: 1.42857143;
 }

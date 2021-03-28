@@ -21,16 +21,67 @@
   // }
 
   &--setting {
-    background: center / contain url("../theme/images/SVGs/settings-sharp.svg") no-repeat;
+    background: center / contain url("../theme/images/SVGs/settings-sharp.svg")
+      no-repeat;
+    cursor: pointer;
+  }
+
+  &--hamburgerIcon {
+    background: center / contain url("../theme/images/SVGs/menu.svg") no-repeat;
+    cursor: pointer;
+  }
+
+  &--calendarIcon {
+    background: center / contain url("../theme/images/SVGs/calendar.webp")
+      no-repeat;
+    cursor: pointer;
+  }
+
+  &--tommorowIcon {
+    background: center / contain url("../theme/images/SVGs/tomorrow.webp")
+      no-repeat;
+    cursor: pointer;
+  }
+
+  &--todayIcon {
+    background: center / contain url("../theme/images/SVGs/today.webp")
+      no-repeat;
+    cursor: pointer;
+  }
+
+  &--customIcon {
+    background: center / contain url("../theme/images/SVGs/customCalender.webp")
+      no-repeat;
+    cursor: pointer;
+  }
+
+  &--lowPriorityIcon {
+    background: center / contain url("../theme/images/SVGs/1MarkPriority.webp")
+      no-repeat;
+    cursor: pointer;
+  }
+
+  &--medPriorityIcon {
+    background: center / contain url("../theme/images/SVGs/2MarkPriority.webp")
+      no-repeat;
+    cursor: pointer;
+  }
+
+  &--highPriorityIcon {
+    background: center / contain url("../theme/images/SVGs/3MarkPriority.webp")
+      no-repeat;
+    cursor: pointer;
   }
 }
 
 .png {
   width: auto;
-  height: auto;   
+  height: auto;
 
   &-user-1 {
-    background: center / contain url("../theme/images/avatars/avatar-1.jpg") no-repeat;
+    background: center / contain url("../theme/images/avatars/avatar-1.jpg")
+      no-repeat;
+    cursor: pointer;
   }
 
   // &-user-2 {
@@ -44,12 +95,12 @@
   // &-user-4 {
   //   background: center / contain url("../img/png/user-4.jpg") no-repeat;
   // }
-  
+
   // &-user-5 {
   //   background: center / contain url("../img/png/user-5.jpg") no-repeat;
   // }
-  
+
   // &-user-6 {
   //     background: center / contain url("../img/png/user-6.jpg") no-repeat;
-  // }
+  //}
 }

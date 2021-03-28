@@ -9,54 +9,73 @@
 // Create new legacy File to Corner All Legacy Changes Files
 // Create Readme file Document All Code
 
+//? Todos NOT Important Ideas
+// Make Classes Do not Conflict with other Frameworks
+// Make SassyPro Website add [homePage, Motivation, docs, npmPackage, Cdn, ...rest]
+
+//
 //
 //
 //
 //
 //
 // BLOCK--ELEMENT__MODIFIER
+
 // * abstract
 @import "./abstracts/variable";
 
+//! Atomic Approch For 7 Folder System of scss
+//? Atoms [Single Properties - based on csswg Page Modle - Atomic Css]
 // * Base
-// @import "./base/fontUtil";
 @import "./base/indexBase";
 @import "./base/tagBase";
 @import "./base/utilitiesMain";
 
-// * pages
-@import "./pages/home";
-// Update Manager
-@import "./pages/majorUpdateManager";
-
+//? Molecules [Basic PreMade Component - ex - Bootstrap && Materialize Components ]
 // * components
 @import "./components/button";
-@import "./components/flex";
+@import "./components/flex"; //GoTo Base
 @import "./components/input";
-@import "./components/modal";
-@import "./components/grid";
+@import "./components/modal"; //GoTo layout
+@import "./components/grid"; //GoTo Base
 @import "./components/img";
 
+//? Organisms [PreMade Structures - ex - Grid/Flex Structural Layouts ex - Modal, Footer, Header etc ]
 // * layouts
 @import "./layout/footer";
 @import "./layout/sideNavigation";
 @import "./layout/navigation";
 @import "./layout/header";
 
+//? Templates || Pages [structural Pages plugNplay - ex - Home Page PreDesigns]
+// * pages
+@import "./pages/home";
+
+//? Utils [Custom Pages - ex - Single page for each project to add Custom Css needed in project ]
 // * Theme
-// Files Specific To certain Projects || Not Relevent in other projects
+// Try to use Sassy pro use only in important cases
+// ex- [edditing el not part of project || using where sassypro cannot be used]
 @import "./theme/themeMain";
 
+//? Outsiders || Vendors
 // * Vendors
-// @import "./vendor/vendorMain";
+// Do Not Import Complete css Framework as it conflicts with sassypro classes
 @import "./vendor/boxicons/css/boxicons.min.css";
 
-//
-//
-//
-//
-//* BLOCK--ELEMENT__MODIFIER
+//? Helper [ Store Legacy code until Magor Release to prevent breaks ]
+// *  Update Manager
+@import "./abstracts/majorUpdateManager";
 
+// ! Legacy Helper File Names
+//
+//
+//
+//
+//
+//
+//
+//
+//
 // POSSIBLE FILES
 // @import "abstracts/functions";
 // @import "abstracts/mixins";
@@ -69,15 +88,12 @@
 // @import "base/utilities";
 
 // @import "components/bg-video";
-// @import "components/button";
 // @import "components/card";
 // @import "components/composition";
 // @import "components/feature-box";
 // @import "components/form";
 // @import "components/popup";
 // @import "components/story";
-// @import "./components/img";
-// @import "./components/imgGallery";
 // @import "./components/hotelOverview";
 // @import "./components/hotelDetails";
 

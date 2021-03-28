@@ -40,4 +40,8 @@
   &-hidden {
     display: none;
   }
+  // Initially none but change to block at specific mediaQuery
+  &-hiddenSwitch {
+    display: none;
+  }
 }
