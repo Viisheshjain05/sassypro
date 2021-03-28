@@ -1,24 +1,17 @@
-//Todo INDEX 
-// 1) 
-// 2) 
-// 3) 
-// 4) 
-// 5) 
+//Todo INDEX
+// 1)
+// 2)
+// 3)
+// 4)
+// 5)
 
 
-// UNIFORM SIDE GAP CONTAINER
-.inline-block {
-  display: inline-block;
+.container-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
-.inline {
-  display: inline;
-}
-
-.block {
-  display: block;
-}
-
 
 .container-row {
   display: flex;
@@ -30,18 +23,11 @@
   width: 100%;
 }
 
-.container-col {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .shadow-light {
   box-shadow: var(--default-shadow-light);
 }
 
-// ToDo
+//! LEGACY CODE REMOVE IN MAJOR RELEASE
 .main-container {
   display: flex;
   height: 100%;

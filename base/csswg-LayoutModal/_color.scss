@@ -1,0 +1,538 @@
+// ? CSS Color Module Level 4 Draft
+
+// * FileName           -   _Color.scss
+// * Contain properties - [color, opacity, rendering-intent, src];
+
+//Todo INDEX
+// 1) Color [Consepted From Bootstrap Color Pallet]
+// 2)
+// 3)
+// 4)
+// 5)
+
+// Todo Chk Why var is not working
+// //? Managing Colors Used In Code Here Only
+// //? Colors used
+// $blue: var(--blue); // #007bff;
+// $indigo: var(--indigo); // #6610f2;
+// $purple: var(--purple); // #6f42c1;
+// $pink: var(--pink); // #e83e8c;
+// $red: var(--red); // #dc3545;
+// $orange: var(--orange); // #fd7e14;
+// $yellow: var(--yellow); // #ffc107;
+// $green: var(--green); // #28a745;
+// $teal: var(--teal); // #20c997;
+// $cyan: var(--cyan); // #17a2b8;
+// $white: var(--white); // #fff;
+// $grey: var(--grey); // #6c757d;
+// $dark: var(--dark); // #343a40;
+
+// //? Marked Colors
+// $primary: var(--primary); // #007bff;
+// $secondary: var(--secondary); // #6c757d;
+// $success: var(--success); // #28a745;
+// $info: var(--info); // #17a2b8;
+// $warning: var(--warning); // #ffc107;
+// $danger: var(--danger); // #dc3545;
+// $light: var(--light); // #f8f9fa;
+// $dark: var(--dark); // #343a40;
+
+// Todo Temprary
+//? Managing Colors Used In Code Here Only
+//? Colors used
+$blue: #007bff;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #e83e8c;
+$red: #dc3545;
+$orange: #fd7e14;
+$yellow: #ffc107;
+$green: #28a745;
+$teal: #20c997;
+$cyan: #17a2b8;
+$white: #fff;
+$grey: #6c757d;
+$dark: #343a40;
+
+//? Marked Colors
+$primary: #007bff;
+$secondary: #6c757d;
+$success: #28a745;
+$info: #17a2b8;
+$warning: #ffc107;
+$danger: #dc3545;
+$light: #f8f9fa;
+$dark: #343a40;
+
+//! ----------------------------- Bootstrap Color Pallet Code START -----------------------------
+
+// scss-docs-start color-functions
+// Tint a color: mix a color with white
+@function tint-color($color, $weight) {
+  @return mix(white, $color, $weight);
+}
+
+// Shade a color: mix a color with black
+@function shade-color($color, $weight) {
+  @return mix(black, $color, $weight);
+}
+
+$white: #fff;
+$grey-100: #f8f9fa;
+$grey-200: #e9ecef;
+$grey-300: #dee2e6;
+$grey-400: #ced4da;
+$grey-500: #adb5bd;
+$grey-600: #6c757d;
+$grey-700: #495057;
+$grey-800: #343a40;
+$grey-900: #212529;
+$black: #000;
+
+$blue-100: tint-color($blue, 80%);
+$blue-200: tint-color($blue, 60%);
+$blue-300: tint-color($blue, 40%);
+$blue-400: tint-color($blue, 20%);
+$blue-500: $blue;
+$blue-600: shade-color($blue, 20%);
+$blue-700: shade-color($blue, 40%);
+$blue-800: shade-color($blue, 60%);
+$blue-900: shade-color($blue, 80%);
+
+$indigo-100: tint-color($indigo, 80%);
+$indigo-200: tint-color($indigo, 60%);
+$indigo-300: tint-color($indigo, 40%);
+$indigo-400: tint-color($indigo, 20%);
+$indigo-500: $indigo;
+$indigo-600: shade-color($indigo, 20%);
+$indigo-700: shade-color($indigo, 40%);
+$indigo-800: shade-color($indigo, 60%);
+$indigo-900: shade-color($indigo, 80%);
+
+$purple-100: tint-color($purple, 80%);
+$purple-200: tint-color($purple, 60%);
+$purple-300: tint-color($purple, 40%);
+$purple-400: tint-color($purple, 20%);
+$purple-500: $purple;
+$purple-600: shade-color($purple, 20%);
+$purple-700: shade-color($purple, 40%);
+$purple-800: shade-color($purple, 60%);
+$purple-900: shade-color($purple, 80%);
+
+$pink-100: tint-color($pink, 80%);
+$pink-200: tint-color($pink, 60%);
+$pink-300: tint-color($pink, 40%);
+$pink-400: tint-color($pink, 20%);
+$pink-500: $pink;
+$pink-600: shade-color($pink, 20%);
+$pink-700: shade-color($pink, 40%);
+$pink-800: shade-color($pink, 60%);
+$pink-900: shade-color($pink, 80%);
+
+$red-100: tint-color($red, 80%);
+$red-200: tint-color($red, 60%);
+$red-300: tint-color($red, 40%);
+$red-400: tint-color($red, 20%);
+$red-500: $red;
+$red-600: shade-color($red, 20%);
+$red-700: shade-color($red, 40%);
+$red-800: shade-color($red, 60%);
+$red-900: shade-color($red, 80%);
+
+$orange-100: tint-color($orange, 80%);
+$orange-200: tint-color($orange, 60%);
+$orange-300: tint-color($orange, 40%);
+$orange-400: tint-color($orange, 20%);
+$orange-500: $orange;
+$orange-600: shade-color($orange, 20%);
+$orange-700: shade-color($orange, 40%);
+$orange-800: shade-color($orange, 60%);
+$orange-900: shade-color($orange, 80%);
+
+$yellow-100: tint-color($yellow, 80%);
+$yellow-200: tint-color($yellow, 60%);
+$yellow-300: tint-color($yellow, 40%);
+$yellow-400: tint-color($yellow, 20%);
+$yellow-500: $yellow;
+$yellow-600: shade-color($yellow, 20%);
+$yellow-700: shade-color($yellow, 40%);
+$yellow-800: shade-color($yellow, 60%);
+$yellow-900: shade-color($yellow, 80%);
+
+$green-100: tint-color($green, 80%);
+$green-200: tint-color($green, 60%);
+$green-300: tint-color($green, 40%);
+$green-400: tint-color($green, 20%);
+$green-500: $green;
+$green-600: shade-color($green, 20%);
+$green-700: shade-color($green, 40%);
+$green-800: shade-color($green, 60%);
+$green-900: shade-color($green, 80%);
+
+$teal-100: tint-color($teal, 80%);
+$teal-200: tint-color($teal, 60%);
+$teal-300: tint-color($teal, 40%);
+$teal-400: tint-color($teal, 20%);
+$teal-500: $teal;
+$teal-600: shade-color($teal, 20%);
+$teal-700: shade-color($teal, 40%);
+$teal-800: shade-color($teal, 60%);
+$teal-900: shade-color($teal, 80%);
+
+$cyan-100: tint-color($cyan, 80%);
+$cyan-200: tint-color($cyan, 60%);
+$cyan-300: tint-color($cyan, 40%);
+$cyan-400: tint-color($cyan, 20%);
+$cyan-500: $cyan;
+$cyan-600: shade-color($cyan, 20%);
+$cyan-700: shade-color($cyan, 40%);
+$cyan-800: shade-color($cyan, 60%);
+$cyan-900: shade-color($cyan, 80%);
+
+//! ----------------------------- Bootstrap Color Pallet Code END -----------------------------
+
+//! Actual code starts Here
+.clr-transparent {
+  color: transparent;
+}
+.clr-curcol {
+  color: currentColor;
+}
+
+.black {
+  color: $black;
+}
+
+.white {
+  color: $white;
+}
+
+.grey- {
+  &100 {
+    color: $grey-100;
+  }
+  &200 {
+    color: $grey-200;
+  }
+  &300 {
+    color: $grey-300;
+  }
+  &400 {
+    color: $grey-400;
+  }
+  &500 {
+    color: $grey-500;
+  }
+  &600 {
+    color: $grey-600;
+  }
+  &700 {
+    color: $grey-700;
+  }
+  &800 {
+    color: $grey-800;
+  }
+  &900 {
+    color: $grey-900;
+  }
+}
+
+.indigo- {
+  &100 {
+    color: $indigo-100;
+  }
+  &200 {
+    color: $indigo-200;
+  }
+  &300 {
+    color: $indigo-300;
+  }
+  &400 {
+    color: $indigo-400;
+  }
+  &500 {
+    color: $indigo-500;
+  }
+  &600 {
+    color: $indigo-600;
+  }
+  &700 {
+    color: $indigo-700;
+  }
+  &800 {
+    color: $indigo-800;
+  }
+  &900 {
+    color: $indigo-900;
+  }
+}
+
+.purple- {
+  &100 {
+    color: $purple-100;
+  }
+  &200 {
+    color: $purple-200;
+  }
+  &300 {
+    color: $purple-300;
+  }
+  &400 {
+    color: $purple-400;
+  }
+  &500 {
+    color: $purple-500;
+  }
+  &600 {
+    color: $purple-600;
+  }
+  &700 {
+    color: $purple-700;
+  }
+  &800 {
+    color: $purple-800;
+  }
+  &900 {
+    color: $purple-900;
+  }
+}
+
+.pink- {
+  &100 {
+    color: $pink-100;
+  }
+  &200 {
+    color: $pink-200;
+  }
+  &300 {
+    color: $pink-300;
+  }
+  &400 {
+    color: $pink-400;
+  }
+  &500 {
+    color: $pink-500;
+  }
+  &600 {
+    color: $pink-600;
+  }
+  &700 {
+    color: $pink-700;
+  }
+  &800 {
+    color: $pink-800;
+  }
+  &900 {
+    color: $pink-900;
+  }
+}
+
+.red- {
+  &100 {
+    color: $red-100;
+  }
+  &200 {
+    color: $red-200;
+  }
+  &300 {
+    color: $red-300;
+  }
+  &400 {
+    color: $red-400;
+  }
+  &500 {
+    color: $red-500;
+  }
+  &600 {
+    color: $red-600;
+  }
+  &700 {
+    color: $red-700;
+  }
+  &800 {
+    color: $red-800;
+  }
+  &900 {
+    color: $red-900;
+  }
+}
+
+.orange- {
+  &100 {
+    color: $orange-100;
+  }
+  &200 {
+    color: $orange-200;
+  }
+  &300 {
+    color: $orange-300;
+  }
+  &400 {
+    color: $orange-400;
+  }
+  &500 {
+    color: $orange-500;
+  }
+  &600 {
+    color: $orange-600;
+  }
+  &700 {
+    color: $orange-700;
+  }
+  &800 {
+    color: $orange-800;
+  }
+  &900 {
+    color: $orange-900;
+  }
+}
+
+.yellow- {
+  &100 {
+    color: $yellow-100;
+  }
+  &200 {
+    color: $yellow-200;
+  }
+  &300 {
+    color: $yellow-300;
+  }
+  &400 {
+    color: $yellow-400;
+  }
+  &500 {
+    color: $yellow-500;
+  }
+  &600 {
+    color: $yellow-600;
+  }
+  &700 {
+    color: $yellow-700;
+  }
+  &800 {
+    color: $yellow-800;
+  }
+  &900 {
+    color: $yellow-900;
+  }
+}
+
+.green- {
+  &100 {
+    color: $green-100;
+  }
+  &200 {
+    color: $green-200;
+  }
+  &300 {
+    color: $green-300;
+  }
+  &400 {
+    color: $green-400;
+  }
+  &500 {
+    color: $green-500;
+  }
+  &600 {
+    color: $green-600;
+  }
+  &700 {
+    color: $green-700;
+  }
+  &800 {
+    color: $green-800;
+  }
+  &900 {
+    color: $green-900;
+  }
+}
+
+.teal- {
+  &100 {
+    color: $teal-100;
+  }
+  &200 {
+    color: $teal-200;
+  }
+  &300 {
+    color: $teal-300;
+  }
+  &400 {
+    color: $teal-400;
+  }
+  &500 {
+    color: $teal-500;
+  }
+  &600 {
+    color: $teal-600;
+  }
+  &700 {
+    color: $teal-700;
+  }
+  &800 {
+    color: $teal-800;
+  }
+  &900 {
+    color: $teal-900;
+  }
+}
+
+.cyan- {
+  &100 {
+    color: $cyan-100;
+  }
+  &200 {
+    color: $cyan-200;
+  }
+  &300 {
+    color: $cyan-300;
+  }
+  &400 {
+    color: $cyan-400;
+  }
+  &500 {
+    color: $cyan-500;
+  }
+  &600 {
+    color: $cyan-600;
+  }
+  &700 {
+    color: $cyan-700;
+  }
+  &800 {
+    color: $cyan-800;
+  }
+  &900 {
+    color: $cyan-900;
+  }
+}
+
+.blue- {
+  &100 {
+    color: $blue-100;
+  }
+  &200 {
+    color: $blue-200;
+  }
+  &300 {
+    color: $blue-300;
+  }
+  &400 {
+    color: $blue-400;
+  }
+  &500 {
+    color: $blue-500;
+  }
+  &600 {
+    color: $blue-600;
+  }
+  &700 {
+    color: $blue-700;
+  }
+  &800 {
+    color: $blue-800;
+  }
+  &900 {
+    color: $blue-900;
+  }
+}

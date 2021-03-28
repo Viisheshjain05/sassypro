@@ -1,0 +1,12 @@
+.overflow-hidden {
+  overflow: hidden;
+}
+.overflowx-hidden {
+  overflow-x: hidden !important;
+}
+
+.overflow {
+  &-auto {
+    overflow: auto;
+  }
+}

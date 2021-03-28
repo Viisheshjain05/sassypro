@@ -1,0 +1,29 @@
+// ? CSS Backgrounds and Borders Module Level 3 CR
+
+// * FileName           -   _BackgroundBorders.scss
+// * Contain properties - [Border, Background, BoxShadow];
+
+//Todo INDEX
+// 1) Background
+// 2)
+// 3)
+// 4)
+// 5)
+
+//? BackGround Uses
+.bg {
+  // Background Default
+  &__def {
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-size: cover;
+    background-position: center;
+  }
+
+  //   BackGround Images
+  &-img {
+    &__Todomistlogo {
+      background-image: url("../../theme/images/logo.png");
+    }
+  }
+}

@@ -1,3 +1,5 @@
+// TYPOGRAPHY
+
 //Todo INDEX 
 // 1) 
 // 2) 
@@ -27,8 +29,8 @@ $h6-font-size: 16px;
 }
 
 .fs-2 {
-  font-size: $h2-font-size;
-}
+  font-size: $h2-font-size !important;
+} 
 
 .fs-3 {
   font-size: $h3-font-size;
@@ -46,6 +48,3 @@ $h6-font-size: 16px;
   font-size: $h6-font-size;
 }
 
-.text-muted{
-  color: var(--color-grey-d1);
-}

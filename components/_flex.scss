@@ -1,10 +1,9 @@
-//Todo INDEX 
-// 1) 
-// 2) 
-// 3) 
-// 4) 
-// 5) 
-
+//Todo INDEX
+// 1)
+// 2)
+// 3)
+// 4)
+// 5)
 
 //? ALL FLEX LAYOUT CODE
 // Todo Create A layout Classes
@@ -17,8 +16,14 @@
   &-sa {
     justify-content: space-around;
   }
+  &-se {
+    justify-content: space-evenly;
+  }
   &-fs {
     justify-content: flex-start;
+  }
+  &-c {
+    justify-content: center;
   }
 }
 
@@ -26,17 +31,22 @@
   &-c {
     align-items: center;
   }
+  &-b {
+    align-items: baseline;
+  }
 }
 
-.align {
-  &-end {
+.as {
+  &-fe {
     align-self: flex-end;
   }
-  &-start {
+  &-fs {
     align-self: flex-start;
   }
+  &-bl {
+    align-self: baseline;
+  }
 }
-
 
 .col {
   display: flex;
@@ -85,7 +95,6 @@
   }
 }
 
-
 // ! LEGACY CODE TO BE REMOVE IN MAJOR VERSION
 .row {
   &-jc-sb {
@@ -133,4 +142,20 @@
   align-self: flex-start;
 }
 
-// ! Legacy Code To be Removed In major Release
+.align {
+  &-end {
+    align-self: flex-end;
+  }
+  &-start {
+    align-self: flex-start;
+  }
+}
+
+.as {
+  &-end {
+    align-self: flex-end;
+  }
+  &-start {
+    align-self: flex-start;
+  }
+}

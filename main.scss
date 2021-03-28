@@ -1,5 +1,20 @@
-// BLOCK--ELEMENT__MODIFIER
+//? TODO To Do Now
+// Origanise by Csswg FileNaming System And Add files includes And draft name in all files
+// Diffrentiate in drafts and components
 
+//? Todos Next imporovements MUST
+// Manage All Component utils and unwanted files
+// Manage All Unwanted Themes And files
+// Manage And All Clones Of npm Repo Containing Any new Code
+// Create new legacy File to Corner All Legacy Changes Files
+// Create Readme file Document All Code
+
+//
+//
+//
+//
+//
+// BLOCK--ELEMENT__MODIFIER
 // * abstract
 @import "./abstracts/variable";
 
@@ -7,11 +22,12 @@
 // @import "./base/fontUtil";
 @import "./base/indexBase";
 @import "./base/tagBase";
-@import "./base/typography";
 @import "./base/utilitiesMain";
 
 // * pages
 @import "./pages/home";
+// Update Manager
+@import "./pages/majorUpdateManager";
 
 // * components
 @import "./components/button";
@@ -19,7 +35,7 @@
 @import "./components/input";
 @import "./components/modal";
 @import "./components/grid";
-// @import "./components/SVGs/svg";
+@import "./components/img";
 
 // * layouts
 @import "./layout/footer";
@@ -32,7 +48,8 @@
 @import "./theme/themeMain";
 
 // * Vendors
-@import "./vendor/vendorMain";
+// @import "./vendor/vendorMain";
+@import "./vendor/boxicons/css/boxicons.min.css";
 
 //
 //
